@@ -1,0 +1,52 @@
+:root{
+    --clr-dark: rgb(15, 9, 49) ;
+    --clr-light: rgb(250, 141, 101) ;
+    --clr-medium: rgb(170, 77, 170) ;
+    --clr-screen: rgb(169, 255, 169) ; 
+}
+body{
+    background-color: var(--clr-dark);
+    font-family: "Playwrite BE VLG", cursive;
+    color:var(--clr-light);
+    text-align: center;
+}
+#gameContainer{
+    text-align: center;
+}
+#gameBoard{
+    border: 3px solid var(--clr-light);
+    background-color: var(--clr-screen);
+}
+#scoreText{
+    font-family: "Playwrite BE VLG", monospace;
+    color: var(--clr-medium);
+    font-size: 40px;
+}
+#resetBtn{
+    font-family: "Playwrite BE VLG", monospace;
+    background-color: var(--clr-medium);
+    color: var(--clr-light);
+    border-radius: 15px;
+    border: 2px solid var(--clr-light);
+    font-size: 25px;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+}
+#resetBtn:active{
+    filter: brightness(1.2);
+}
+/* copy pasted but fickled around with a bit, idk why there is so many colors, but i altered the first few*/
+.glow {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@-webkit-keyframes glow{
+    from {
+      text-shadow: 0 0 10px var(--clr-screen), 0 0 20px var(--clr-dark), 0 0 30px var(--clr-medium), 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px var(--clr-screen), 0 0 30px var(--clr-medium), 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
