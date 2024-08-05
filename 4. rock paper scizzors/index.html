@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK Paper Scizzors</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body> <!-- https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=904s 19 min-->
+    <h1> Rock - Paper - Sciss</h1>
+
+    <div class="choices">
+        <button onclick="playGame('rock')">👊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissors')">✌</button>
+    
+    </div>
+    <div id="playerDisplay">PLAYER:</div>
+    <div id="computerDisplay">COMPUTER:</div>
+    <div id="resultDisplay">...</div>
+
+    <div class="scoreDispla winText"> Player Score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
+    <div class="scoreDisplay loseText"> Computer Score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <div id="musicControls">
+        <button id="playPauseBtn">⏯</button>
+        <input id="volumeControl" type="range" min="0" max="100" value="30">
+    </div>
+
+    <audio id="clickSound" src="assets/button_click.wav"></audio>
+    <audio id="bgMusic" src="assets/background_relaxation.wav" loop></audio>
+    <audio id="winSound" src="assets/win.wav"></audio>
+    <audio id="loseSound" src="assets/lose.wav"></audio>
+    <audio id="tieSound" src="assets/tie.wav"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
