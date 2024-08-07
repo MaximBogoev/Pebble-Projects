@@ -1,0 +1,70 @@
+:root{
+    --main-clr: #aa3939;
+    --secondary-clr: rgb(58, 169, 110);
+    --complimentary-clr: rgb(59, 126, 171);
+}
+body{
+    font-family: "Playwrite BE VLG";  
+    background-image: url(assets/third\ try.png); /* top 10 worst background qualities: number 1 i win yay ;-;*/
+    background-size: cover; /* Makes the background image cover the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+button{
+    font-family: "Playwrite BE VLG"; 
+}
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid var(--secondary-clr);
+    box-shadow: 0 0 0 2px var(--complimentary-clr);
+    line-height: 75px;
+    font-size: 50px;
+    color: var(--main-clr);
+    text-shadow: 0 0 2px var(--main-clr);
+    cursor: pointer;
+    box-shadow: 0 0 2px var(--complimentary-clr), 0 0 5px var(--complimentary-clr), 0 0 8px var(--complimentary-clr);
+    transition: box-shadow 1s ease , scale 500ms ease, text-shadow 1s ease;
+}
+.cell:hover{
+    box-shadow: 0 0 5px var(--complimentary-clr), 0 0 10px var(--complimentary-clr), 0 0 20px var(--complimentary-clr);
+    text-shadow: 0 0 2px var(--main-clr), 0 0 4px var(--main-clr);
+    scale: 1.05;
+}
+#gameContainer{
+    text-align: center
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 225px;
+    margin: auto;
+}
+h2, h1{
+    color: var(--main-clr);
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 5px 5px 10px var(--secondary-clr), 10px 10px 10px var(--complimentary-clr) ;
+}
+h2{
+    text-shadow: 2px 2px 4px var(--secondary-clr), 4px 4px 4px var(--complimentary-clr) ;
+}
+button{
+    background-color: var(--secondary-clr);
+    color: var(--main-clr);
+    border: 2px solid var(--complimentary-clr);
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: box-shadow 1s ease, scale 500ms ease;
+}
+button:hover{
+    box-shadow: 3px 3px 3px var(--complimentary-clr), 5px 5px 5px hsl(204, 49%, 42%), 7px 7px 7px hsl(204, 49%, 39%);
+    scale: 1.05; /*scale fucks up the text's quality quite badly for futures notice*/
+}
+button:active{
+    filter: invert(0.1);
+}
