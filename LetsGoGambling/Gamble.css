@@ -1,0 +1,11 @@
+body{
+  background-color: #ade7ff;
+  color: #222222;
+  text-align: center;
+}
+ul li{
+  display: inline;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
