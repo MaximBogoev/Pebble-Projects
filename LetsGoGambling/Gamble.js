@@ -169,6 +169,7 @@ function SpinItGuaranteed() {
                                                             SpinnerThree.textContent = OneDigit - 1;
                                                             setTimeout(() => {
                                                               SpinnerThree.textContent = OneDigit;
+                                                              check();
                                                             }, 1024)
                                                           }, 512)
                                                         }, 256)
